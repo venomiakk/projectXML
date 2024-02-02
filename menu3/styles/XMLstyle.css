@@ -1,0 +1,121 @@
+:root {
+  /* text */
+  --color1: rgb(240, 236, 229);
+  /* background */
+  --color2: rgb(22, 26, 48);
+
+  --color3: rgb(49, 48, 77);
+
+  --color4: rgb(0, 181, 166);
+
+  --color5: rgb(182, 187, 196);
+}
+
+hardware::before {
+  content: "Dokument XML przedstawia listę popularnych części komputerowych kupowanych w 2023 roku.";
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  white-space: pre;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin: 0.5em 0;
+  border-bottom: solid #ccc 2px;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+hardware {
+  font-family: "Courier New", Courier, monospace;
+  display: grid;
+  gap: 20px;
+  color: var(--color1);
+  background-color: var(--color2);
+  text-align: center;
+}
+
+manufacturers::before {
+  display: block;
+  content: "Lista producentów\A \0020";
+  white-space: pre;
+  text-align: center;
+}
+
+hardware > manufacturers {
+  display: table;
+  manufacturer::before {
+    display: table-cell;
+    content: attr(manufacturerID);
+    width: 50px;
+    border: 2px solid var(--color3);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+}
+
+manufacturer > * {
+  display: table-cell;
+  width: 200px;
+  border: 2px solid var(--color3);
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+manufacturers::after {
+  display: block;
+  content: "\A\A Rodzaj sprzętu";
+  white-space: pre;
+}
+value::after {
+  content: " $";
+}
+
+product_types {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+product_types > *::before {
+  display: table-cell;
+  content: attr(ptID);
+  width: 200px;
+  border-bottom: 2px solid var(--color3);
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+product_types > * {
+  display: table-cell;
+  width: 200px;
+  border: 2px solid var(--color3);
+  text-align: center;
+  border-radius: 5px;
+}
+
+products::before {
+  display: block;
+  content: "\A\A Lista produktów \A \0020";
+  white-space: pre;
+  text-align: center;
+}
+
+products {
+  display: table;
+}
+
+product > * {
+  display: table-cell;
+  width: 200px;
+  border: 2px solid var(--color3);
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+price::after {
+  content: " $";
+}

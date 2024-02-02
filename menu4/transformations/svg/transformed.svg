@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" style="background-color: white">
+    <text x="90" y="35" fill="black" font-size="25">Ilość wystąpień producentów w produktach</text>
+    <line x1="50" y1="50" x2="50" y2="350" stroke="black" stroke-widts="5px" />
+    <line x1="50" y1="350" x2="560" y2="350" stroke="black" stroke-widts="5px" />
+    <line x1="50" y1="50" x2="560" y2="50" stroke="black" stroke-widts="5px" />
+    <line x1="560" y1="50" x2="560" y2="350" stroke="black" stroke-widts="5px" />
+    <text x="20" y="280" fill="black">1</text>
+    <line x1="50" y1="280" x2="40" y2="280" stroke="black" stroke-widts="2px" />
+    <text x="20" y="210" fill="black">2</text>
+    <line x1="50" y1="210" x2="40" y2="210" stroke="black" stroke-widts="2px" />
+    <text x="20" y="140" fill="black">3</text>
+    <line x1="50" y1="140" x2="40" y2="140" stroke="black" stroke-widts="2px" />
+    <text x="20" y="70" fill="black">4</text>
+    <line x1="50" y1="70" x2="40" y2="70" stroke="black" stroke-widts="2px" />
+    <rect x="65" y="210" width="40" height="140" stroke="black" stroke-widts="2px" fill="blue">
+        <animate attributeName="fill" values="blue;green;yellow;green;blue" dur="10s" repeatCount="indefinite" />
+    </rect>
+    <text x="70" y="380" fill="black">m01</text>
+    <rect x="120" y="70" width="40" height="280" stroke="black" stroke-widts="2px" fill="blue">
+        <animate attributeName="fill" values="blue;green;yellow;green;blue" dur="10s" repeatCount="indefinite" />
+    </rect>
+    <text x="125" y="380" fill="black">m02</text>
+    <rect x="175" y="140" width="40" height="210" stroke="black" stroke-widts="2px" fill="blue">
+        <animate attributeName="fill" values="blue;green;yellow;green;blue" dur="10s" repeatCount="indefinite" />
+    </rect>
+    <text x="180" y="380" fill="black">m03</text>
+    <rect x="230" y="280" width="40" height="70" stroke="black" stroke-widts="2px" fill="blue">
+        <animate attributeName="fill" values="blue;green;yellow;green;blue" dur="10s" repeatCount="indefinite" />
+    </rect>
+    <text x="235" y="380" fill="black">m04</text>
+    <rect x="285" y="280" width="40" height="70" stroke="black" stroke-widts="2px" fill="blue">
+        <animate attributeName="fill" values="blue;green;yellow;green;blue" dur="10s" repeatCount="indefinite" />
+    </rect>
+    <text x="290" y="380" fill="black">m05</text>
+    <rect x="340" y="140" width="40" height="210" stroke="black" stroke-widts="2px" fill="blue">
+        <animate attributeName="fill" values="blue;green;yellow;green;blue" dur="10s" repeatCount="indefinite" />
+    </rect>
+    <text x="345" y="380" fill="black">m06</text>
+    <rect x="395" y="210" width="40" height="140" stroke="black" stroke-widts="2px" fill="blue">
+        <animate attributeName="fill" values="blue;green;yellow;green;blue" dur="10s" repeatCount="indefinite" />
+    </rect>
+    <text x="400" y="380" fill="black">m07</text>
+    <rect x="450" y="280" width="40" height="70" stroke="black" stroke-widts="2px" fill="blue">
+        <animate attributeName="fill" values="blue;green;yellow;green;blue" dur="10s" repeatCount="indefinite" />
+    </rect>
+    <text x="455" y="380" fill="black">m08</text>
+    <rect x="505" y="140" width="40" height="210" stroke="black" stroke-widts="2px" fill="blue">
+        <animate attributeName="fill" values="blue;green;yellow;green;blue" dur="10s" repeatCount="indefinite" />
+    </rect>
+    <text x="510" y="380" fill="black">m09</text>
+</svg>

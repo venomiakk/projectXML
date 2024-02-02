@@ -1,0 +1,112 @@
+@import url(../../styles/root.css);
+
+.grid-container {
+  display: grid;
+  /* justify-content: center; */
+  padding: 2em;
+  padding-bottom: 70px;
+  padding-top: 0px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 5em;
+}
+
+.flex-container > * {
+  flex-grow: 1;
+  flex-basis: 35%;
+}
+
+.dom-container {
+  text-align: center;
+  padding: 25px;
+  background-color: #282c34;
+  margin-top: 1.75em;
+  height: fit-content;
+}
+
+.info-container {
+  text-align: center;
+  margin: 15px;
+  padding: 5px;
+}
+
+.dom-container,
+.code-container > pre > code {
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 2px var(--color5);
+  /* margin: 40px */
+}
+
+.code-container > pre > code {
+  overflow-x: hidden;
+  height: 720px;
+}
+
+.code-container > pre > code::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+.code-container > pre > code::-webkit-scrollbar-thumb {
+  background: var(--color3);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.code-container > pre > code::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.validation-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2em;
+  align-items: center;
+  margin-left: 2em;
+}
+
+#validation-msg {
+  padding: 0px;
+  margin: 0px;
+  max-width: 600px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.validation-container > div:first-child {
+  text-align: center;
+}
+
+.validator-link:link,
+.validator-link:visited {
+  color: var(--color4);
+}
+
+.validator-link {
+  font-style: italic;
+  font-size: small;
+}
+
+@keyframes flash {
+  0% {
+    color: var(--color1);
+    opacity: 1;
+  }
+  50% {
+    color: var(--color4);
+    opacity: 0.5;
+  }
+  to {
+    color: var(--color4);
+    opacity: 1;
+  }
+}
+
+.highlight {
+  animation: flash 0.18s;
+}

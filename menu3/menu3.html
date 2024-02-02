@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/loadTransition.css" />
+    <link rel="stylesheet" href="../styles/body.css" />
+    <link rel="stylesheet" href="../styles/nav_foot.css" />
+    <link rel="stylesheet" href="./styles/menu3.css" />
+    <title>Menu 3: XML Schema + CSS</title>
+  </head>
+  <body>
+    <nav class="nav-header">
+      <div class="nav-item-left">
+        <a href="../menu2/menu2.html">
+          <svg class="left-arrow" width="50" height="50">
+            <path
+              class="left-arrow-path"
+              d="M 40 10 L 10 25 L 40 40 L 35 25 Z"
+              fill="var(--color1)"
+            />
+          </svg>
+        </a>
+      </div>
+      <a class="main-link" href="../index.html">
+        <h2>Projekt - Technologie XML</h2>
+      </a>
+      <div class="nav-item-right">
+        <a href="../menu4/menu4.html">
+          <svg class="right-arrow" width="50" height="50">
+            <path
+              class="right-arrow-path"
+              d="M 10 10 L 40 25 L 10 40 L 15 25 Z"
+              fill="var(--color1)"
+            />
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <div class="grid-container loadTransitionElement">
+      <div class="validation-container">
+        <div>
+          <p>
+            Wynik z
+            <a
+              class="page-link"
+              href="https://www.xmlvalidation.com"
+              target="_blank"
+              >walidatora</a
+            >
+          </p>
+
+          <img class="validation-img" src="./validation.png" />
+        </div>
+      </div>
+      <div class="xml-container" id="xmldivID">
+        <div>
+          <a href="./hardware_m3.xml" class="button-link" target="_blank">
+            <button class="page-button">Otwórz w nowej karcie</button>
+          </a>
+          <a href="./schema.xsd" class="button-link" target="_blank">
+            <button class="page-button">XML Schema</button>
+          </a>
+        </div>
+        <iframe
+          id="xmlframeID"
+          class="xml-frame"
+          scrolling="no"
+          src="./hardware_m3.xml"
+        ></iframe>
+      </div>
+    </div>
+
+    <footer>
+      <div class="left-footer">
+        <p>Politechnika Łódzkia, Wydział FTIMS,</p>
+        <p>Informatyka Stosowana, semestr 3</p>
+      </div>
+      <div class="right-footer">
+        <p>Adrian Michałek</p>
+        <p>
+          <a class="foot-link" href="mailto:247736@edu.p.lodz.pl"
+            >247736@edu.p.lodz.pl</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

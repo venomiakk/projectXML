@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="714px" height="402px">
+    <defs>
+        <linearGradient id="gradient-blue" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:rgb(114, 165, 255);" />
+            <stop offset="70%" style="stop-color:rgb(0, 71, 196);" />
+        </linearGradient>
+
+        <radialGradient id="gradient-sun">
+            <stop offset="5%" stop-color="#ffae00" />
+            <stop offset="40%" stop-color="#ffe600" />
+            <stop offset="90%" stop-color="#ffef8a" />
+        </radialGradient>
+
+        <filter id="f1" x="0" y="0" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="0" dy="7" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="1" />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <filter id="f2" x="-100%" y="0" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="-0" dy="7" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="1" />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+
+    </defs>
+
+    <rect width="714" height="402" fill="url(#gradient-blue)" />
+    <circle cx="636" cy="55" r="30" fill="url(#gradient-sun)">
+        <animateMotion path="M 0 0 L 0 10 L 0 0" dur="5s" repeatCount="indefinite" />
+    </circle>
+
+    <rect x="53" y="40" width="65" height="15" rx="6" fill="#ffffff">
+        <animateMotion path="M -150 0 L 700 0" dur="20s" repeatCount="indefinite" />
+    </rect>
+    <ellipse cx="66" cy="45" rx="12.5" ry="9" fill="white">
+        <animateMotion path="M -150 0 L 700 0" dur="20s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="84" cy="38" rx="13.5" ry="6.5" fill="white">
+        <animateMotion path="M -150 0 L 700 0" dur="20s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="102" cy="41" rx="10.5" ry="5" fill="white">
+        <animateMotion path="M -150 0 L 700 0" dur="20s" repeatCount="indefinite" />
+    </ellipse>
+
+    <rect x="210" y="80" width="65" height="15" rx="6" fill="#ffffff">
+        <animateMotion path="M -350 0 L 500 0" dur="25s" repeatCount="indefinite" />
+    </rect>
+    <ellipse cx="223" cy="85" rx="12.5" ry="9" fill="white">
+        <animateMotion path="M -350 0 L 500 0" dur="25s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="241" cy="78" rx="13.5" ry="6.5" fill="white">
+        <animateMotion path="M -350 0 L 500 0" dur="25s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="259" cy="81" rx="10.5" ry="5" fill="white">
+        <animateMotion path="M -350 0 L 500 0" dur="25s" repeatCount="indefinite" />
+    </ellipse>
+
+    <rect x="484" y="21" width="65" height="15" rx="6" fill="white">
+        <animateMotion path="M -650 0 L 350 0" dur="40s" repeatCount="indefinite" />
+    </rect>
+    <ellipse cx="497" cy="26" rx="12.5" ry="9" fill="white">
+        <animateMotion path="M -650 0 L 350 0" dur="40s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="515" cy="19" rx="13.5" ry="6.5" fill="white">
+        <animateMotion path="M -650 0 L 350 0" dur="40s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="533" cy="22" rx="10.5" ry="5" fill="white">
+        <animateMotion path="M -650 0 L 350 0" dur="40s" repeatCount="indefinite" />
+    </ellipse>
+
+    <!-- head -->
+    <rect x="346" y="282" width="22" height="11" fill="#FFDBAC" />
+    <ellipse cx="357" cy="259" rx="35" ry="26" fill="#FFDBAC" />
+    <ellipse cx="370" cy="249" rx="4.5" ry="2.5" fill="white" />
+    <ellipse cx="370" cy="249" rx="1.5" ry="1.2" fill="#62674C" />
+    <ellipse cx="344" cy="249" rx="4.5" ry="2.5" fill="white" />
+    <ellipse cx="344" cy="249" rx="1.5" ry="1.2" fill="#62674C" />
+
+    <path d="M344 273 Q 358 280, 370 273" stroke="#fd3a3a" fill="transparent">
+        <animate attributeName="d" begin="0s" dur="2s" repeatCount="1" values="
+            M344 273 Q 358 275, 370 273; 
+            M344 273 Q 358 280, 370 273; " />
+    </path>
+
+    <path d="M329 243 C 339, 229, 373, 229, 385, 243" fill="#361A00" />
+
+    <!-- body -->
+    <ellipse cx="357" cy="300" rx="50" ry="10" fill="#252525" />
+    <rect x="312" y="305" width="90" height="97" fill="#252525" />
+    <rect x="392" y="299" width="15" height="84" fill="#252525" filter="url(#f2)" />
+    <rect x="307" y="299" width="15" height="84" fill="#252525" filter="url(#f1)" />
+
+    <rect x="307" y="382" width="15" height="9" fill="#FFDBAC" />
+    <rect x="392" y="382" width="15" height="9" fill="#FFDBAC" />
+
+</svg>

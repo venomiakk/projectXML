@@ -1,0 +1,238 @@
+<svg width="620" height="816" viewBox="0 0 620 816" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        text {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+        }
+
+        #l1 {
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        #l2 {
+            font-weight: 500;
+            font-size: 15px;
+        }
+    </style>
+
+    <!-- product: availability -->
+    <rect x="340" y="775" width="135" height="41" fill="#ADA4C6" />
+    <text x="360" y="792" fill="black">
+        availability
+    </text>
+    <text x="360" y="807" fill="black">
+        (enum: string)
+    </text>
+
+    <!-- product: phone -->
+    <rect x="340" y="722" width="135" height="41" fill="#ADA4C6" />
+    <text x="360" y="740" fill="black">
+        phone
+    </text>
+    <text x="360" y="755" fill="black">
+        (string: pattern)
+    </text>
+
+    <!-- product: price attr -->
+    <ellipse cx="552.5" cy="688.5" rx="67.5" ry="20.5" fill="#C3E1C2" />
+    <text x="529" y="692" fill="black">
+        currency
+    </text>
+
+    <line x1="475" y1="689.5" x2="485" y2="689.5" stroke="#E0E0E0" />
+
+    <!-- product: price -->
+    <rect x="340" y="669" width="135" height="41" fill="#ADA4C6" />
+    <text x="360" y="686" fill="black">
+        price
+    </text>
+    <text x="360" y="701" fill="black">
+        (decimal)
+    </text>
+
+    <!-- product: manufacturer -->
+    <rect x="340" y="616" width="135" height="41" fill="#ADA4C6" />
+    <text x="360" y="634" fill="black">
+        manufacturer
+    </text>
+    <text x="360" y="650" fill="black">
+        (string)
+    </text>
+
+    <!-- product: name -->
+    <rect x="340" y="563" width="135" height="41" fill="#ADA4C6" />
+    <text x="360" y="582" fill="black">
+        name
+    </text>
+    <text x="360" y="597" fill="black">
+        (string)
+    </text>
+
+    <line x1="322" y1="795.5" x2="340" y2="795.5" stroke="#E0E0E0" />
+    <line x1="340" y1="743.5" x2="322" y2="743.5" stroke="#E0E0E0" />
+    <line x1="340" y1="689.5" x2="322" y2="689.5" stroke="#E0E0E0" />
+    <line x1="340" y1="637.5" x2="322" y2="637.5" stroke="#E0E0E0" />
+    <line x1="340" y1="585.5" x2="322" y2="585.5" stroke="#E0E0E0" />
+    <line x1="321.5" y1="639" x2="321.5" y2="585" stroke="#E0E0E0" />
+    <line x1="321.5" y1="639" x2="321.5" y2="796" stroke="#E0E0E0" />
+    <line x1="301" y1="715.5" x2="321" y2="715.5" stroke="#E0E0E0" />
+    <line x1="157" y1="715.5" x2="166" y2="715.5" stroke="#E0E0E0" />
+    <line x1="156.5" y1="680" x2="156.5" y2="716" stroke="#E0E0E0" />
+
+    <!-- product -->
+    <rect x="166" y="695" width="135" height="41" fill="#DACBB5" />
+    <text x="210" y="718" fill="black">
+        product
+    </text>
+    <!-- products -->
+    <rect x="131" y="639" width="135" height="41" fill="#B5C8DA" />
+    <text id="l2" x="170" y="663" fill="black">
+        products
+    </text>
+
+    <line x1="119" y1="659.5" x2="131" y2="659.5" stroke="#E0E0E0" />
+    <line x1="118.5" y1="417" x2="118.5" y2="660" stroke="#E0E0E0" />
+
+    <!-- prdocut_type: attr -->
+    <ellipse cx="378.5" cy="472.5" rx="67.5" ry="20.5" fill="#C3E1C2" />
+    <text x="367" y="475" fill="black">
+        ptID
+    </text>
+
+    <line x1="301" y1="472.5" x2="311" y2="472.5" stroke="#E0E0E0" />
+
+    <!-- product_type -->
+    <rect x="166" y="452" width="135" height="41" fill="#ADA4C6" />
+    <text x="175" y="468" fill="black">
+        product_type
+    </text>
+    <text x="175" y="483" fill="black">
+        (string)
+    </text>
+
+    <line x1="156" y1="472.5" x2="166" y2="472.5" stroke="#E0E0E0" />
+    <line x1="156.5" y1="437" x2="156.5" y2="473" stroke="#E0E0E0" />
+
+    <!-- product_types -->
+    <rect x="131" y="396" width="135" height="41" fill="#B5C8DA" />
+    <text id="l2" x="145" y="420" fill="black">
+        products_types
+    </text>
+
+    <line x1="119" y1="416.5" x2="131" y2="416.5" stroke="#E0E0E0" />
+    <line x1="118.5" y1="174" x2="118.5" y2="417" stroke="#E0E0E0" />
+
+    <!-- manufacturer: mail -->
+    <rect x="340" y="306" width="135" height="41" fill="#ADA4C6" />
+    <text x="360" y="322" fill="black">
+        mail
+    </text>
+    <text x="360" y="337" fill="black">
+        (string: pattern)
+    </text>
+
+    <!-- manufacturer: phone -->
+    <rect x="340" y="253" width="135" height="41" fill="#ADA4C6" />
+    <text x="360" y="270" fill="black">
+        phone
+    </text>
+    <text x="360" y="285" fill="black">
+        (string: pattern)
+    </text>
+
+    <!-- value: attr -->
+    <ellipse cx="552.5" cy="219.5" rx="67.5" ry="20.5" fill="#C3E1C2" />
+    <text x="529" y="222" fill="black">
+        currency
+    </text>
+
+    <line x1="475" y1="220.5" x2="485" y2="220.5" stroke="#E0E0E0" />
+
+    <!-- manufacturer: value -->
+    <rect x="340" y="200" width="135" height="41" fill="#ADA4C6" />
+    <text x="360" y="215" fill="black">
+        value
+    </text>
+    <text x="360" y="230" fill="black">
+        (decimal)
+    </text>
+
+    <!-- manufacturer: country -->
+    <rect x="340" y="147" width="135" height="41" fill="#ADA4C6" />
+    <text x="360" y="162" fill="black">
+        country
+    </text>
+    <text x="360" y="177" fill="black">
+        (string)
+    </text>
+
+    <!-- manufacturer: establishment -->
+    <rect x="340" y="94" width="135" height="41" fill="#ADA4C6" />
+    <text x="360" y="110" fill="black">
+        establishment
+    </text>
+    <text x="360" y="125" fill="black">
+        (date)
+    </text>
+
+    <!-- manufacturer: name -->
+    <rect x="340" y="41" width="135" height="41" fill="#ADA4C6" />
+    <text x="360" y="55" fill="black">
+        name
+    </text>
+    <text x="360" y="70" fill="black">
+        (string)
+    </text>
+
+    <line x1="322" y1="61.5" x2="340" y2="61.5" stroke="#E0E0E0" />
+    <line x1="340" y1="116.5" x2="322" y2="116.5" stroke="#E0E0E0" />
+    <line x1="322" y1="326.5" x2="340" y2="326.5" stroke="#E0E0E0" />
+    <line x1="340" y1="274.5" x2="322" y2="274.5" stroke="#E0E0E0" />
+    <line x1="340" y1="220.5" x2="322" y2="220.5" stroke="#E0E0E0" />
+    <line x1="340" y1="168.5" x2="322" y2="168.5" stroke="#E0E0E0" />
+    <line x1="321.5" y1="170" x2="321.5" y2="327" stroke="#E0E0E0" />
+    <line x1="301" y1="229.5" x2="321" y2="229.5" stroke="#E0E0E0" />
+    <line x1="321.5" y1="170" x2="321.5" y2="61" stroke="#E0E0E0" />
+    <line x1="234.5" y1="250" x2="234.5" y2="260" stroke="#E0E0E0" />
+
+    <!-- manufacturer: attr -->
+    <ellipse cx="233.5" cy="280.5" rx="67.5" ry="20.5" fill="#C3E1C2" />
+    <text x="193" y="282" fill="black">
+        manufacturerID
+    </text>
+
+    <!-- manufacturer -->
+    <rect x="166" y="209" width="135" height="41" fill="#DACBB5" />
+    <text x="200" y="232" fill="black">
+        manufacturer
+    </text>
+
+    <line x1="156" y1="229.5" x2="166" y2="229.5" stroke="#E0E0E0" />
+    <line x1="156.5" y1="194" x2="156.5" y2="230" stroke="#E0E0E0" />
+
+    <!-- manufacturers -->
+    <rect x="131" y="153" width="135" height="41" fill="#B5C8DA" />
+    <text id="l2" x="152" y="177" fill="black">
+        manufacturers
+    </text>
+
+    <line x1="118" y1="173.5" x2="131" y2="173.5" stroke="#E0E0E0" />
+    <line x1="118.5" y1="100" x2="118.5" y2="174" stroke="#E0E0E0" />
+
+    <!-- hardware -->
+    <rect x="81" y="59" width="135" height="41" fill="#D9ABAB" />
+    <text id="l1" x="110" y="85" fill="black">
+        hardware
+    </text>
+
+    <!-- document -->
+    <rect width="135" height="41" fill="#E0DCCE" />
+    <text id="l1" x="25" y="25" fill="black">
+        document
+    </text>
+
+    <line x1="68.5" y1="41" x2="68.5" y2="77" stroke="#E0E0E0" />
+    <line x1="68" y1="76.5" x2="81" y2="76.5" stroke="#E0E0E0" />
+</svg>

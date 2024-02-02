@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./styles/XMLstyle.css" type="text/css" rel="stylesheet"?>
+
+<hardware xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="./schema.xsd">
+    <manufacturers>
+        <!-- 1 -->
+        <manufacturer manufacturerID="m01">
+            <name>Nvidia</name>
+            <establishment>1993-04-05</establishment>
+            <country>USA</country>
+            <value currency="usd">1206000000000</value>
+            <phone>(+1) 408-486-200</phone>
+            <mail>info@nvidia.com</mail>
+        </manufacturer>
+        <!-- 2 -->
+        <manufacturer manufacturerID="m02">
+            <name>Intel</name>
+            <establishment>1968-07-18</establishment>
+            <country>USA</country>
+            <value currency="usd">213680000000</value>
+            <phone>(+1) 312-360-512</phone>
+            <mail>support@intel.com</mail>
+        </manufacturer>
+        <!-- 3 -->
+        <manufacturer manufacturerID="m03">
+            <name>Advanced Micro Devices - AMD</name>
+            <establishment>1969-05-01</establishment>
+            <country>USA</country>
+            <value currency="usd">231670000000</value>
+            <phone>(+1) 600-321-600</phone>
+            <mail>info@amd.com</mail>
+        </manufacturer>
+        <!-- 4 -->
+        <manufacturer manufacturerID="m04">
+            <name>Adata</name>
+            <establishment>2001-05-01</establishment>
+            <country>Taiwan</country>
+            <value currency="usd">49580000000</value>
+            <phone>(+886) 282-280-886</phone>
+            <mail>adata@adata.com</mail>
+        </manufacturer>
+
+        <!-- 5 -->
+        <manufacturer manufacturerID="m05">
+            <name>Corsair Components</name>
+            <establishment>1994-01-01</establishment>
+            <country>USA</country>
+            <value currency="usd">1470000000</value>
+            <phone>(+1) 510-657-874</phone>
+            <mail>hq@corsair.com</mail>
+        </manufacturer>
+
+        <!-- 6 -->
+        <manufacturer manufacturerID="m06">
+            <name>Micro-Star International - MSI</name>
+            <establishment>1986-08-04</establishment>
+            <country>Taiwan</country>
+            <value currency="usd">51520000000</value>
+            <phone>(+46) 844-685-416</phone>
+            <mail>service.erc@msi.com</mail>
+        </manufacturer>
+
+        <!-- 7 -->
+        <manufacturer manufacturerID="m07">
+            <name>Asus</name>
+            <establishment>1989-04-02</establishment>
+            <country>Taiwan</country>
+            <value currency="usd">11800000000</value>
+            <phone>(+1) 510-739-377</phone>
+            <mail>eservice@asus.com</mail>
+        </manufacturer>
+
+        <!-- 8 -->
+        <manufacturer manufacturerID="m08">
+            <name>Seagate Technology</name>
+            <establishment>1979-11-01</establishment>
+            <country>USA</country>
+            <value currency="usd">17920000000</value>
+            <phone>(+1) 405-324-471</phone>
+            <mail>stx@seagate.com</mail>
+        </manufacturer>
+
+        <!-- 9 -->
+        <manufacturer manufacturerID="m09">
+            <name>Gigabyte Technology</name>
+            <establishment>1986-01-01</establishment>
+            <country>Taiwan</country>
+            <value currency="usd">5430000000</value>
+            <phone>(+886) 289-124-000</phone>
+            <mail>services@gigabyte.com</mail>
+        </manufacturer>
+
+    </manufacturers>
+
+    <product_types>
+        <product_type ptID="gpu">Graphics Processing Unit</product_type>
+        <product_type ptID="cpu">Central Processing Unit</product_type>
+        <product_type ptID="ssd">Solid State Drive</product_type>
+        <product_type ptID="hdd">Hard Disc Drive</product_type>
+        <product_type ptID="ram">Random Access Memory</product_type>
+        <product_type ptID="mb">Motherboard</product_type>
+    </product_types>
+
+    <products>
+        <!-- 1 -->
+        <product>
+            <name>GeForce RTX 4090 Founders Edition</name>
+            <manufacturer>m01</manufacturer>
+            <price currency="usd">1999.99</price>
+            <type>gpu</type>
+            <availability>low</availability>
+        </product>
+        <!-- 2 -->
+        <product>
+            <name>Intel Core i9-13900K</name>
+            <manufacturer>m02</manufacturer>
+            <price currency="usd">629.99</price>
+            <type>cpu</type>
+            <availability>medium</availability>
+        </product>
+        <!-- 3 -->
+        <product>
+            <name>AMD Ryzen 7 7800X3D</name>
+            <manufacturer>m03</manufacturer>
+            <price currency="usd">1499.99</price>
+            <type>cpu</type>
+            <availability>high</availability>
+        </product>
+        <!-- 4 -->
+        <product>
+            <name>Adata Legend 960 1TB</name>
+            <manufacturer>m04</manufacturer>
+            <price currency="usd">79.99</price>
+            <type>ssd</type>
+            <availability>high</availability>
+        </product>
+
+        <!-- 5 -->
+        <product>
+            <name>Intel Core i5-13600K</name>
+            <manufacturer>m02</manufacturer>
+            <price currency="usd">283.99</price>
+            <type>cpu</type>
+            <availability>low</availability>
+        </product>
+
+        <!-- 6 -->
+        <product>
+            <name>AMD Ryzen 5 5600X</name>
+            <manufacturer>m03</manufacturer>
+            <price currency="usd">156.00</price>
+            <type>cpu</type>
+            <availability>medium</availability>
+        </product>
+
+        <!-- 7 -->
+        <product>
+            <name>Corsair Vengeance LPX 16GB (2x8GB)</name>
+            <manufacturer>m05</manufacturer>
+            <price currency="usd">40.99</price>
+            <type>ram</type>
+            <availability>high</availability>
+        </product>
+
+        <!-- 8 -->
+        <product>
+            <name>MSI Gaming GeForce RTX 3060 12GB</name>
+            <manufacturer>m06</manufacturer>
+            <price currency="usd">289.39</price>
+            <type>gpu</type>
+            <availability>low</availability>
+        </product>
+
+        <!-- 9 -->
+        <product>
+            <name>Asus ROG Strix B550-F</name>
+            <manufacturer>m07</manufacturer>
+            <price currency="usd">189.99</price>
+            <type>mb</type>
+            <availability>high</availability>
+        </product>
+
+        <!-- 10 -->
+        <product>
+            <name>Seagate BarraCuda 2TB</name>
+            <manufacturer>m08</manufacturer>
+            <price currency="usd">59.99</price>
+            <type>hdd</type>
+            <availability>high</availability>
+        </product>
+
+        <!-- 11 -->
+        <product>
+            <name>GIGABYTE GeForce RTX 3060 Gaming OC 12G </name>
+            <manufacturer>m09</manufacturer>
+            <price currency="usd">429.99</price>
+            <type>gpu</type>
+            <availability>low</availability>
+        </product>
+
+        <!-- 12 -->
+        <product>
+            <name>GIGABYTE B650 AORUS Elite AX </name>
+            <manufacturer>m09</manufacturer>
+            <price currency="usd">229.99</price>
+            <type>mb</type>
+            <availability>high</availability>
+        </product>
+
+        <!-- 13 -->
+        <product>
+            <name>Intel Core i7-13700K</name>
+            <manufacturer>m02</manufacturer>
+            <price currency="usd">419.00</price>
+            <type>cpu</type>
+            <availability>medium</availability>
+        </product>
+
+        <!-- 14 -->
+        <product>
+            <name>ASUS Dual GeForce RTX 4060 OC Edition 8GB GDDR6</name>
+            <manufacturer>m07</manufacturer>
+            <price currency="usd">309.99</price>
+            <type>gpu</type>
+            <availability>low</availability>
+        </product>
+
+        <!-- 15 -->
+        <product>
+            <name>Intel Core i5-12600K</name>
+            <manufacturer>m02</manufacturer>
+            <price currency="usd">214.99</price>
+            <type>cpu</type>
+            <availability>medium</availability>
+        </product>
+
+        <!-- 16 -->
+        <product>
+            <name>Nvidia GeForce RTX 3070 Founders Edition</name>
+            <manufacturer>m01</manufacturer>
+            <price currency="usd">695.00</price>
+            <type>gpu</type>
+            <availability>low</availability>
+        </product>
+
+        <!-- 17 -->
+        <product>
+            <name>Gigabyte GeForce RTX 4060 Eagle OC 8GB GDDR6</name>
+            <manufacturer>m09</manufacturer>
+            <price currency="usd">380.00</price>
+            <type>gpu</type>
+            <availability>low</availability>
+        </product>
+
+        <!-- 18 -->
+        <product>
+            <name>MSI Radeon RX 6650 XT MECH 2X OC</name>
+            <manufacturer>m06</manufacturer>
+            <price currency="usd">350.99</price>
+            <type>gpu</type>
+            <availability>medium</availability>
+        </product>
+
+        <!-- 19 -->
+        <product>
+            <name>AMD Ryzen 7 5700X</name>
+            <manufacturer>m03</manufacturer>
+            <price currency="usd">190</price>
+            <type>cpu</type>
+            <availability>high</availability>
+        </product>
+
+        <!-- 20 -->
+        <product>
+            <name>MSI GeForce RTX 4070 GAMING X SLIM 12GB</name>
+            <manufacturer>m06</manufacturer>
+            <price currency="usd">850.00</price>
+            <type>gpu</type>
+            <availability>medium</availability>
+        </product>
+
+    </products>
+</hardware>

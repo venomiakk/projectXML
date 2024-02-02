@@ -1,0 +1,153 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- 
+    *START OF HARDWARE
+  -->
+
+  <xs:element name="hardware" type="hardwareT">
+
+    <xs:keyref name="manufacturerKREF" refer="manufacturerIDK">
+      <xs:selector xpath="hardware/manufacturers" />
+      <xs:field xpath="manufacturer" />
+    </xs:keyref>
+
+    <xs:keyref name="typeKREF" refer="ptIDK">
+      <xs:selector xpath="hardware/products/product" />
+      <xs:field xpath="type" />
+    </xs:keyref>
+
+    <xs:key name="manufacturerIDK">
+      <xs:selector xpath="hardware/manufacturers/manufacturer" />
+      <xs:field xpath="@manufacturerID" />
+    </xs:key>
+
+    <xs:key name="ptIDK">
+      <xs:selector xpath="hardware/product_types/product_type" />
+      <xs:field xpath="@ptID" />
+    </xs:key>
+
+  </xs:element>
+
+  <xs:complexType name="hardwareT">
+    <xs:sequence>
+      <xs:element name="manufacturers" type="manufacturersT" />
+      <xs:element name="product_types" type="product_typesT" />
+      <xs:element name="products" type="productsT" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- 
+    *END OF HARDWARE
+  -->
+
+
+  <!-- 
+    *START OF MANUFACTURERS
+  -->
+
+  <xs:complexType name="manufacturersT">
+    <xs:sequence>
+      <!-- *@KEY-->
+      <xs:element name="manufacturer" type="manufacturerT" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="manufacturerT">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" />
+      <xs:element name="establishment" type="xs:date" />
+      <xs:element name="country" type="xs:string" />
+      <xs:element name="value" type="moneyT" />
+      <xs:element name="phone" type="phoneT" />
+      <xs:element name="mail" type="mailT" />
+    </xs:sequence>
+    <xs:attribute name="manufacturerID" type="xs:string" />
+  </xs:complexType>
+
+  <!-- 
+    *END OF MANUFACTURERS
+  -->
+
+
+  <!-- 
+    *START OF PRODUCT_TYPES
+  -->
+
+  <xs:complexType name="product_typesT">
+    <xs:sequence>
+      <xs:element name="product_type" type="product_typeT" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="product_typeT">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <!-- *@KEY -->
+        <xs:attribute name="ptID" type="xs:string" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <!-- 
+    *END OF PRODUCT_TYPES
+  -->
+
+
+  <!-- 
+    *START OF PRODUCTS
+  -->
+
+  <xs:complexType name="productsT">
+    <xs:sequence>
+      <xs:element name="product" type="productT" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="productT">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" />
+      <xs:element name="manufacturer" />
+      <!-- *@KEYREF-->
+      <xs:element name="price" type="moneyT" />
+      <!-- *@KEYREF -->
+      <xs:element name="type" />
+      <xs:element name="availability" type="availabilityEnum" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- 
+    *END OF PRODUCTS
+  -->
+
+
+  <!-- *types/restrictions* -->
+
+  <xs:complexType name="moneyT">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="currency" type="xs:string" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="availabilityEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="low" />
+      <xs:enumeration value="medium" />
+      <xs:enumeration value="high" />
+    </xs:restriction>
+  </xs:simpleType>
+
+
+  <xs:simpleType name="mailT">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\S+@\S+.[a-z]{2,4}" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="phoneT">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\(\+\d{1,4}\) \d{3}-\d{3}-\d{3}" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

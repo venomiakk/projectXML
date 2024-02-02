@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="../styles/loadTransition.css" />
+    <link rel="stylesheet" href="../styles/body.css" />
+    <link rel="stylesheet" href="../styles/nav_foot.css" />
+    <link rel="stylesheet" href="./styles/menu2.css" />
+    <title>Menu 2: XML</title>
+  </head>
+  <body onload="encodeXML('xml_code')">
+    <nav class="nav-header">
+      <div class="nav-item-left">
+        <a href="../menu1/menu1.html">
+          <svg class="left-arrow" width="50" height="50">
+            <path
+              class="left-arrow-path"
+              d="M 40 10 L 10 25 L 40 40 L 35 25 Z"
+              fill="var(--color1)"
+            />
+          </svg>
+        </a>
+      </div>
+      <a class="main-link" href="../index.html">
+        <h2>Projekt - Technologie XML</h2>
+      </a>
+      <div class="nav-item-right">
+        <a href="../menu3/menu3.html">
+          <svg class="right-arrow" width="50" height="50">
+            <path
+              class="right-arrow-path"
+              d="M 10 10 L 40 25 L 10 40 L 15 25 Z"
+              fill="var(--color1)"
+            />
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <div class="grid-container loadTransitionElement">
+      <div id="test"></div>
+      <div class="info-container">
+        <p>
+          Dokument XML przedstawia listę popularnych części komputerowych
+          kupowanych w 2023 roku.
+        </p>
+        <p>
+          Poniżej zaprezentowana jest struktura dokumentu jak i kod z
+          możliwością pobrania.
+        </p>
+        <p>
+          <a
+            class="button-link"
+            href="./hardware_m2.xml"
+            download="hardware.xml"
+          >
+            <button class="download-xml page-button">Pobierz XML</button>
+          </a>
+          <a class="button-link" href="./hardware_m2.xml" target="_blank">
+            <button class="show-xml page-button">Pokaż XML</button>
+          </a>
+        </p>
+      </div>
+      <div class="flex-container">
+        <div class="dom-container">
+          <img src="xmlDOMv01.svg" />
+        </div>
+        <div class="code-container">
+          <pre>
+            <code id="xml_code" contenteditable="true" spellcheck="false" >
+&#60;?xml version="1.0" encoding="UTF-8"?&#62;
+&#60;hardware&#62;
+    &#60;manufacturers&#62;
+        &#60;!-- 1 --&#62;
+        &#60;manufacturer manufacturerID="m01"&#62;
+            &#60;name&#62;Nvidia&#60;/name&#62;
+            &#60;establishment&#62;1993-04-05&#60;/establishment&#62;
+            &#60;country&#62;USA&#60;/country&#62;
+            &#60;value currency="usd"&#62;1206000000000&#60;/value&#62;
+            &#60;phone&#62;(+1) 408-486-200&#60;/phone&#62;
+            &#60;mail&#62;info@nvidia.com&#60;/mail&#62;
+        &#60;/manufacturer&#62;
+        &#60;!-- 2 --&#62;
+        &#60;manufacturer manufacturerID="m02"&#62;
+            &#60;name&#62;Intel&#60;/name&#62;
+            &#60;establishment&#62;1968-07-18&#60;/establishment&#62;
+            &#60;country&#62;USA&#60;/country&#62;
+            &#60;value currency="usd"&#62;213680000000&#60;/value&#62;
+            &#60;phone&#62;(+1) 312-360-512&#60;/phone&#62;
+            &#60;mail&#62;support@intel.com&#60;/mail&#62;
+        &#60;/manufacturer&#62;
+        &#60;!-- 3 --&#62;
+        &#60;manufacturer manufacturerID="m03"&#62;
+            &#60;name&#62;Advanced Micro Devices - AMD&#60;/name&#62;
+            &#60;establishment&#62;1969-05-01&#60;/establishment&#62;
+            &#60;country&#62;USA&#60;/country&#62;
+            &#60;value currency="usd"&#62;231670000000&#60;/value&#62;
+            &#60;phone&#62;(+1) 600-321-600&#60;/phone&#62;
+            &#60;mail&#62;info@amd.com&#60;/mail&#62;
+        &#60;/manufacturer&#62;
+        &#60;!-- 4 --&#62;
+        &#60;manufacturer manufacturerID="m04"&#62;
+            &#60;name&#62;Adata&#60;/name&#62;
+            &#60;establishment&#62;2001-05-01&#60;/establishment&#62;
+            &#60;country&#62;Taiwan&#60;/country&#62;
+            &#60;value currency="usd"&#62;49580000000&#60;/value&#62;
+            &#60;phone&#62;(+886) 282-280-886&#60;/phone&#62;
+            &#60;mail&#62;adata@adata.com&#60;/mail&#62;
+        &#60;/manufacturer&#62;
+
+        &#60;!-- 5 --&#62;
+        &#60;manufacturer manufacturerID="m05"&#62;
+            &#60;name&#62;Corsair Components&#60;/name&#62;
+            &#60;establishment&#62;1994-01-01&#60;/establishment&#62;
+            &#60;country&#62;USA&#60;/country&#62;
+            &#60;value currency="usd"&#62;1470000000&#60;/value&#62;
+            &#60;phone&#62;(+1) 510-657-874&#60;/phone&#62;
+            &#60;mail&#62;hq@corsair.com&#60;/mail&#62;
+        &#60;/manufacturer&#62;
+
+        &#60;!-- 6 --&#62;
+        &#60;manufacturer manufacturerID="m06"&#62;
+            &#60;name&#62;Micro-Star International - MSI&#60;/name&#62;
+            &#60;establishment&#62;1986-08-04&#60;/establishment&#62;
+            &#60;country&#62;Taiwan&#60;/country&#62;
+            &#60;value currency="usd"&#62;51520000000&#60;/value&#62;
+            &#60;phone&#62;(+46) 844-685-416&#60;/phone&#62;
+            &#60;mail&#62;service.erc@msi.com&#60;/mail&#62;
+        &#60;/manufacturer&#62;
+
+        &#60;!-- 7 --&#62;
+        &#60;manufacturer manufacturerID="m07"&#62;
+            &#60;name&#62;Asus&#60;/name&#62;
+            &#60;establishment&#62;1989-04-02&#60;/establishment&#62;
+            &#60;country&#62;Taiwan&#60;/country&#62;
+            &#60;value currency="usd"&#62;11800000000&#60;/value&#62;
+            &#60;phone&#62;(+1) 510-739-377&#60;/phone&#62;
+            &#60;mail&#62;eservice@asus.com&#60;/mail&#62;
+        &#60;/manufacturer&#62;
+
+        &#60;!-- 8 --&#62;
+        &#60;manufacturer manufacturerID="m08"&#62;
+            &#60;name&#62;Seagate Technology&#60;/name&#62;
+            &#60;establishment&#62;1979-11-01&#60;/establishment&#62;
+            &#60;country&#62;USA&#60;/country&#62;
+            &#60;value currency="usd"&#62;17920000000&#60;/value&#62;
+            &#60;phone&#62;(+1) 405-324-471&#60;/phone&#62;
+            &#60;mail&#62;stx@seagate.com&#60;/mail&#62;
+        &#60;/manufacturer&#62;
+
+        &#60;!-- 9 --&#62;
+        &#60;manufacturer manufacturerID="m09"&#62;
+            &#60;name&#62;Gigabyte Technology&#60;/name&#62;
+            &#60;establishment&#62;1986-01-01&#60;/establishment&#62;
+            &#60;country&#62;Taiwan&#60;/country&#62;
+            &#60;value currency="usd"&#62;5430000000&#60;/value&#62;
+            &#60;phone&#62;(+886) 289-124-000&#60;/phone&#62;
+            &#60;mail&#62;services@gigabyte.com&#60;/mail&#62;
+        &#60;/manufacturer&#62;
+
+    &#60;/manufacturers&#62;
+
+    &#60;product_types&#62;
+        &#60;product_type ptID="gpu"&#62;Graphics Processing Unit&#60;/product_type&#62;
+        &#60;product_type ptID="cpu"&#62;Central Processing Unit&#60;/product_type&#62;
+        &#60;product_type ptID="ssd"&#62;Solid State Drive&#60;/product_type&#62;
+        &#60;product_type ptID="hdd"&#62;Hard Disc Drive&#60;/product_type&#62;
+        &#60;product_type ptID="ram"&#62;Random Access Memory&#60;/product_type&#62;
+        &#60;product_type ptID="mb"&#62;Motherboard&#60;/product_type&#62;
+    &#60;/product_types&#62;
+
+    &#60;products&#62;
+        &#60;!-- 1 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;GeForce RTX 4090 Founders Edition&#60;/name&#62;
+            &#60;manufacturer&#62;m01&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;1999.99&#60;/price&#62;
+            &#60;type&#62;gpu&#60;/type&#62;
+            &#60;availability&#62;low&#60;/availability&#62;
+        &#60;/product&#62;
+        &#60;!-- 2 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;Intel Core i9-13900K&#60;/name&#62;
+            &#60;manufacturer&#62;m02&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;629.99&#60;/price&#62;
+            &#60;type&#62;cpu&#60;/type&#62;
+            &#60;availability&#62;medium&#60;/availability&#62;
+        &#60;/product&#62;
+        &#60;!-- 3 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;AMD Ryzen 7 7800X3D&#60;/name&#62;
+            &#60;manufacturer&#62;m03&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;1499.99&#60;/price&#62;
+            &#60;type&#62;cpu&#60;/type&#62;
+            &#60;availability&#62;high&#60;/availability&#62;
+        &#60;/product&#62;
+        &#60;!-- 4 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;Adata Legend 960 1TB&#60;/name&#62;
+            &#60;manufacturer&#62;m04&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;79.99&#60;/price&#62;
+            &#60;type&#62;ssd&#60;/type&#62;
+            &#60;availability&#62;high&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 5 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;Intel Core i5-13600K&#60;/name&#62;
+            &#60;manufacturer&#62;m02&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;283.99&#60;/price&#62;
+            &#60;type&#62;cpu&#60;/type&#62;
+            &#60;availability&#62;low&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 6 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;AMD Ryzen 5 5600X&#60;/name&#62;
+            &#60;manufacturer&#62;m03&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;156.00&#60;/price&#62;
+            &#60;type&#62;cpu&#60;/type&#62;
+            &#60;availability&#62;medium&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 7 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;Corsair Vengeance LPX 16GB (2x8GB)&#60;/name&#62;
+            &#60;manufacturer&#62;m05&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;40.99&#60;/price&#62;
+            &#60;type&#62;ram&#60;/type&#62;
+            &#60;availability&#62;high&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 8 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;MSI Gaming GeForce RTX 3060 12GB&#60;/name&#62;
+            &#60;manufacturer&#62;m06&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;289.39&#60;/price&#62;
+            &#60;type&#62;gpu&#60;/type&#62;
+            &#60;availability&#62;low&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 9 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;Asus ROG Strix B550-F&#60;/name&#62;
+            &#60;manufacturer&#62;m07&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;189.99&#60;/price&#62;
+            &#60;type&#62;mb&#60;/type&#62;
+            &#60;availability&#62;high&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 10 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;Seagate BarraCuda 2TB&#60;/name&#62;
+            &#60;manufacturer&#62;m08&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;59.99&#60;/price&#62;
+            &#60;type&#62;hdd&#60;/type&#62;
+            &#60;availability&#62;high&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 11 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;GIGABYTE GeForce RTX 3060 Gaming OC 12G &#60;/name&#62;
+            &#60;manufacturer&#62;m09&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;429.99&#60;/price&#62;
+            &#60;type&#62;gpu&#60;/type&#62;
+            &#60;availability&#62;low&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 12 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;GIGABYTE B650 AORUS Elite AX &#60;/name&#62;
+            &#60;manufacturer&#62;m09&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;229.99&#60;/price&#62;
+            &#60;type&#62;mb&#60;/type&#62;
+            &#60;availability&#62;high&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 13 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;Intel Core i7-13700K&#60;/name&#62;
+            &#60;manufacturer&#62;m02&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;419.00&#60;/price&#62;
+            &#60;type&#62;cpu&#60;/type&#62;
+            &#60;availability&#62;medium&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 14 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;ASUS Dual GeForce RTX 4060 OC Edition 8GB GDDR6&#60;/name&#62;
+            &#60;manufacturer&#62;m07&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;309.99&#60;/price&#62;
+            &#60;type&#62;gpu&#60;/type&#62;
+            &#60;availability&#62;low&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 15 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;Intel Core i5-12600K&#60;/name&#62;
+            &#60;manufacturer&#62;m02&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;214.99&#60;/price&#62;
+            &#60;type&#62;cpu&#60;/type&#62;
+            &#60;availability&#62;medium&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 16 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;Nvidia GeForce RTX 3070 Founders Edition&#60;/name&#62;
+            &#60;manufacturer&#62;m01&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;695.00&#60;/price&#62;
+            &#60;type&#62;gpu&#60;/type&#62;
+            &#60;availability&#62;low&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 17 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;Gigabyte GeForce RTX 4060 Eagle OC 8GB GDDR6&#60;/name&#62;
+            &#60;manufacturer&#62;m09&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;380.00&#60;/price&#62;
+            &#60;type&#62;gpu&#60;/type&#62;
+            &#60;availability&#62;low&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 18 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;MSI Radeon RX 6650 XT MECH 2X OC&#60;/name&#62;
+            &#60;manufacturer&#62;m06&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;350.99&#60;/price&#62;
+            &#60;type&#62;gpu&#60;/type&#62;
+            &#60;availability&#62;medium&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 19 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;AMD Ryzen 7 5700X&#60;/name&#62;
+            &#60;manufacturer&#62;m03&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;190&#60;/price&#62;
+            &#60;type&#62;cpu&#60;/type&#62;
+            &#60;availability&#62;high&#60;/availability&#62;
+        &#60;/product&#62;
+
+        &#60;!-- 20 --&#62;
+        &#60;product&#62;
+            &#60;name&#62;MSI GeForce RTX 4070 GAMING X SLIM 12GB&#60;/name&#62;
+            &#60;manufacturer&#62;m06&#60;/manufacturer&#62;
+            &#60;price currency="usd"&#62;850.00&#60;/price&#62;
+            &#60;type&#62;gpu&#60;/type&#62;
+            &#60;availability&#62;medium&#60;/availability&#62;
+        &#60;/product&#62;
+
+    &#60;/products&#62;
+&#60;/hardware&#62;
+
+            </code>
+          </pre>
+
+          <div class="validation-container">
+            <div>
+              <button
+                id="testbtn"
+                class="check-xml page-button"
+                onclick="encodeXML('xml_code')"
+              >
+                Sprawdź poprawność <br />(walidator W3C)
+              </button>
+              <br />
+              <a
+                class="validator-link"
+                href="https://www.w3schools.com/xml/xml_validator.asp"
+                target="_blank"
+                >Wykorzystany walidator</a
+              >
+            </div>
+            <div>
+              <p id="validation-msg"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="left-footer">
+        <p>Politechnika Łódzkia, Wydział FTIMS,</p>
+        <p>Informatyka Stosowana, semestr 3</p>
+      </div>
+      <div class="right-footer">
+        <p>Adrian Michałek</p>
+        <p>
+          <a class="foot-link" href="mailto:247736@edu.p.lodz.pl"
+            >247736@edu.p.lodz.pl</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    hljs.highlightAll();
+  </script>
+  <script src="./scripts/XMLvalidation.js"></script>
+</html>

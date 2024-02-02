@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/loadTransition.css" />
+    <link rel="stylesheet" href="../styles/body.css" />
+    <link rel="stylesheet" href="../styles/nav_foot.css" />
+    <link rel="stylesheet" href="./styles/menu1.css" />
+    <title>Menu 1: Informacje o autorze - HTML, CSS, SVG</title>
+  </head>
+  <body>
+    <nav class="nav-header">
+      <div class="nav-item-left">
+        <a href="../index.html">
+          <svg class="left-arrow" width="50" height="50">
+            <path
+              class="left-arrow-path"
+              d="M 40 10 L 10 25 L 40 40 L 35 25 Z"
+              fill="var(--color1)"
+            />
+          </svg>
+        </a>
+      </div>
+      <a class="main-link" href="../index.html">
+        <h2>Projekt - Technologie XML</h2>
+      </a>
+      <div class="nav-item-right">
+        <a href="../menu2/menu2.html">
+          <svg class="right-arrow" width="50" height="50">
+            <path
+              class="right-arrow-path"
+              d="M 10 10 L 40 25 L 10 40 L 15 25 Z"
+              fill="var(--color1)"
+            />
+          </svg>
+        </a>
+      </div>
+    </nav>
+    <div class="flex-container loadTransitionElement">
+      <div class="info-container">
+        <h3>Informacje o autorze</h3>
+        <p>Adrian Michałek, lat 21</p>
+        <p>Zainteresowania: Informatyka, motoryzacja, muzyka</p>
+        <p>Student Politechniki Łódzkiej, Wydział FTIMS,</p>
+        <p>Na kierunku Informatyka Stosowana, semestr 3</p>
+        <p>
+          Kontakt:
+          <a class="mail-link" href="mailto:247736@edu.p.lodz.pl"
+            >247736@edu.p.lodz.pl</a
+          >
+        </p>
+      </div>
+
+      <div class="svg-container">
+        <img src="image.svg" class="svg-img" />
+        <a href="./image.svg" class="button-link" target="_blank">
+          <button class="page-button">Otwórz w nowej karcie</button>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="left-footer">
+        <p>Politechnika Łódzkia, Wydział FTIMS,</p>
+        <p>Informatyka Stosowana, semestr 3</p>
+      </div>
+      <div class="right-footer">
+        <p>Adrian Michałek</p>
+        <p>
+          <a class="foot-link" href="mailto:247736@edu.p.lodz.pl"
+            >247736@edu.p.lodz.pl</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

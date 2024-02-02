@@ -1,0 +1,40 @@
+@import url(../../styles/root.css);
+
+.xml-container {
+  display: flex;
+  justify-content: center;
+  /* height: calc(120em + 160px); */
+  flex-direction: column;
+  align-items: center;
+}
+
+.xml-frame {
+  width: 95%;
+  height: 120em;
+
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 2px var(--color5);
+  border: none;
+  overflow: hidden;
+}
+
+.page-button {
+  margin-bottom: 2em;
+}
+
+.validation-container {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.page-link {
+  color: var(--color4);
+  text-decoration: none;
+}
+
+.validation-img {
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 2px var(--color5);
+}

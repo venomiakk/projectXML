@@ -1,0 +1,32 @@
+@import url(../../styles/root.css);
+
+.svg-img {
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 50px;
+  gap: 30px;
+}
+
+.flex-container > * {
+  flex-grow: 1;
+  flex-basis: 35%;
+}
+
+.info-container {
+  text-align: center;
+}
+
+.svg-container {
+  text-align: center;
+}
+
+.mail-link {
+  text-decoration: none;
+  color: var(--color4);
+}

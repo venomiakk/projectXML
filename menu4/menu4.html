@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/loadTransition.css" />
+    <link rel="stylesheet" href="../styles/body.css" />
+    <link rel="stylesheet" href="../styles/nav_foot.css" />
+    <link rel="stylesheet" href="./styles/menu4.css" />
+    <title>Menu 4: Transformacje XSLT</title>
+  </head>
+  <body>
+    <nav class="nav-header">
+      <div class="nav-item-left">
+        <a href="../menu3/menu3.html">
+          <svg class="left-arrow" width="50" height="50">
+            <path
+              class="left-arrow-path"
+              d="M 40 10 L 10 25 L 40 40 L 35 25 Z"
+              fill="var(--color1)"
+            />
+          </svg>
+        </a>
+      </div>
+      <a class="main-link" href="../index.html">
+        <h2>Projekt - Technologie XML</h2>
+      </a>
+      <div class="nav-item-right">
+        <svg class="right-arrow" width="50" height="50">
+          <path
+            class="right-arrow-path"
+            d="M 10 10 L 40 25 L 10 40 L 15 25 Z"
+            fill="var(--color3)"
+          />
+        </svg>
+      </div>
+    </nav>
+
+    <div class="grid-container">
+      <div class="xhtml-container">
+        <div class="info-container">
+          <h3>Transformacja do XHTML</h3>
+          <a
+            class="button-link"
+            href="./transformations/xhtml/transformedPage.xhtml"
+            target="_blank"
+          >
+            <button class="page-button">Otwórz w nowej karcie</button>
+          </a>
+          <a
+            class="button-link"
+            href="./transformations/xhtml/transformation.xsl"
+            target="_blank"
+          >
+            <button class="page-button">Pokaż plik XSL</button>
+          </a>
+          <a
+            class="button-link"
+            href="https://validator.w3.org"
+            target="_blank"
+          >
+            <button class="page-button">Walidator XHTML</button>
+          </a>
+        </div>
+        <img class="valid-img" src="./transformations/xhtml/valid.png" />
+        <iframe
+          class="xhtml-frame"
+          src="./transformations/xhtml/transformedPage.xhtml"
+        ></iframe>
+      </div>
+
+      <div class="txt-container">
+        <div class="info-container">
+          <h3>Transformacja do TXT</h3>
+          <a
+            class="button-link"
+            href="./transformations/txt/transformed.txt"
+            target="_blank"
+          >
+            <button class="page-button">Otwórz w nowej karcie</button>
+          </a>
+          <a
+            class="button-link"
+            href="./transformations/txt/transformation.xsl"
+            target="_blank"
+          >
+            <button class="page-button">Pokaż plik XSL</button>
+          </a>
+        </div>
+
+        <iframe
+          class="txt-frame"
+          src="./transformations/txt/transformed.txt"
+        ></iframe>
+      </div>
+
+      <div class="svg-container">
+        <div class="info-container">
+          <h3>Transformacja do TXT</h3>
+          <a
+            class="button-link"
+            href="./transformations/svg/transformed.svg"
+            target="_blank"
+          >
+            <button class="page-button">Otwórz w nowej karcie</button>
+          </a>
+          <a
+            class="button-link"
+            href="./transformations/svg/transformation.xsl"
+            target="_blank"
+          >
+            <button class="page-button">Pokaż plik XSL</button>
+          </a>
+        </div>
+        <img src="./transformations/svg/transformed.svg" />
+      </div>
+    </div>
+
+    <footer>
+      <div class="left-footer">
+        <p>Politechnika Łódzkia, Wydział FTIMS,</p>
+        <p>Informatyka Stosowana, semestr 3</p>
+      </div>
+      <div class="right-footer">
+        <p>Adrian Michałek</p>
+        <p>
+          <a class="foot-link" href="mailto:247736@edu.p.lodz.pl"
+            >247736@edu.p.lodz.pl</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

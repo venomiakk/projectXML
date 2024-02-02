@@ -1,0 +1,42 @@
+@import url(../../styles/root.css);
+
+.grid-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-container {
+  text-align: center;
+  margin: 2em;
+}
+
+.xhtml-container,
+.txt-container,
+.svg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.valid-img {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 2px var(--color5);
+}
+
+.xhtml-frame {
+  width: 1400px;
+  height: 1210px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 2px var(--color5);
+  overflow: hidden;
+}
+
+.txt-frame {
+  width: 45%;
+  height: 680px;
+}
